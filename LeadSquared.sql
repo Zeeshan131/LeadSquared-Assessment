@@ -51,10 +51,10 @@ INSERT INTO INCENTIVES
 (EMPLOYEE_REF_ID, INCENTIVE_DATE, INCENTIVE_AMOUNT)
 VALUES
 (1, '2013-02-06', 5000),
-(1, '2013-02-01', 3000),
-(1, '2013-02-07', 4000),
+(2, '2013-02-01', 3000),
+(3, '2013-02-07', 4000),
 (1, '2013-01-01', 4500),
-(1, '2013-01-04', 3500),
+(2, '2013-01-04', 3500),
 (1, '2013-02-08', 6000);
 
 /*3. Write a query to find the total incentive received by a given employee in a given month.*/
