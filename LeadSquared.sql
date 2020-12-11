@@ -47,15 +47,15 @@ CREATE TABLE INCENTIVES (
 );
 
 /*Insert data into incentive table*/
-INSERT INTO Incentives 
+INSERT INTO INCENTIVES 
 (EMPLOYEE_REF_ID, INCENTIVE_DATE, INCENTIVE_AMOUNT)
 VALUES
-(1, '06-FEB-13', 5000),
-(1, '01-FEB-13', 3000),
-(1, '07-FEB-13', 4000),
-(1, '01-JAN-13', 4500),
-(1, '04-JAN-13', 3500),
-(1, '08-FEB-13', 6000);
+(1, '2013-02-06', 5000),
+(1, '2013-02-01', 3000),
+(1, '2013-02-07', 4000),
+(1, '2013-01-01', 4500),
+(1, '2013-01-04', 3500),
+(1, '2013-02-08', 6000);
 
 /*3. Write a query to find the total incentive received by a given employee in a given month.*/
 SELECT SUM(INCENTIVE_AMOUNT) FROM Incentives GROUP BY EMPLOYEE_REF_ID HAVING TO_CAHR(INCENTIVE_DATE, 'MM')  = '04';
