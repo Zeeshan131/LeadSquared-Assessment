@@ -58,7 +58,8 @@ VALUES
 (1, '2013-02-08', 6000);
 
 /*3. Write a query to find the total incentive received by a given employee in a given month.*/
-SELECT SUM(INCENTIVE_AMOUNT) FROM Incentives GROUP BY EMPLOYEE_REF_ID HAVING TO_CAHR(INCENTIVE_DATE, 'MM')  = '04';
+/*Let the given monthe be january*/
+SELECT SUM(INCENTIVE_AMOUNT) FROM Incentives GROUP BY EMPLOYEE_REF_ID HAVING MONTH(INCENTIVE_DATE) = '01';
 
 
 /*4. Write a query to find the month where employees got maximum incentive*/
